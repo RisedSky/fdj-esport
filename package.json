@@ -1,5 +1,5 @@
 {
-  "name": "FDJ Bot",
+  "name": "fdj_bot",
   "description": "Discord Private Bot",
   "version": "1.0.0",
   "main": "bot.js",
