@@ -66,7 +66,7 @@ class Call {
 bot.on('ready', () => { //When bot is ready
 	bot.user.setStatus("online")
 	console.log("------------------------------")
-	console.log(`${bot.prefixLog} Bot created by RisedSky#1250`)
+	console.log(`${bot.prefixLog} Bot created by KLIM RisedSky#4814`)
 	console.log(`${bot.prefixLog} All rights reserved`)
 	console.log(`${bot.prefixLog} The bot is now ready`)
 	console.log("------------------------------")
@@ -92,7 +92,7 @@ bot.on('message', async message => { //Quand une personne envoi un message
 
 		if (message.author.bot) return;
 		if (!message.guild) {
-			return bot.users.find("id", "145632403946209280").send(`Message reçu de <@${message.author.id}> (${message.author.tag} - ${message.author.id})\nContenu: \`\`\`${message.content}\`\`\` `)
+			return bot.users.find("id", "516033691525447680").send(`Message reçu de <@${message.author.id}> (${message.author.tag} - ${message.author.id})\nContenu: \`\`\`${message.content}\`\`\` `)
 		}
 
 		const prefix = bot.config.prefix,
@@ -184,14 +184,6 @@ bot.on('error', err => {
 	console.log(err)
 })
 
-bot.on('guildUpdate', async (old, now) => {
-	//console.log(`Detected a guildUpdate`);
-
-	if (old.name !== now.name) {
-		//console.log(`Detected a guildUpdate#NameChange`);
-		bot.Update_Server_Name(now)
-	}
-})
 //#region Functions
 
 //#region Important functions
@@ -233,13 +225,13 @@ bot.sendDMToUser = function (message, msgToSend) {
 let ChangeBotState = true;
 function ChangeState1() {
 	if (!ChangeBotState) return;
-	bot.user.setActivity(prefix + "help | By RisedSky#1250");
+	bot.user.setActivity(prefix + "help | By KLIM RisedSky#4814");
 	setTimeout(ChangeState2, ms("5m"));
 }
 
 function ChangeState2() {
 	if (!ChangeBotState) return;
-	bot.user.setActivity(prefix + "help | Besoin d'un bot ? » MP RisedSky#1250");
+	bot.user.setActivity(prefix + "help | Besoin d'un bot ? MP » KLIM RisedSky#4814");
 	setTimeout(ChangeState1, ms("5m"));
 }
 
